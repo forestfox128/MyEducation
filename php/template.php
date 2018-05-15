@@ -186,6 +186,21 @@ class MyPage {
     return $s;
   }
 
+  public function createHobby($title, $content, $image=""){
+
+    $s= "<div class=\"col-1-1\">
+        <div class=\"framePa\">
+        <div class=\"headerEa\"><h4>{$title}</h4></div>
+        <div class=\"contentA\">{$content}</div></div></div>";
+    
+    if ($img !== ""){
+        $s.= "<div class=\"col-1-6\">
+        <img id=route src=\"/../img/{$image}\" alt={$image}>
+        </div>\n";
+    }
+    return $s;
+  }
+
 } //class MyPage
 
 ?>
