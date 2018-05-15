@@ -1,0 +1,243 @@
+
+*{box-sizing: border-box;}
+
+[class*='part'] {
+    float: left;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    
+} 
+
+h4{font-size: 1.7em;}
+
+
+.headerL{
+    background:#ddc1ac;
+    padding:1.2em;
+    text-align: center;
+}
+.headerLa{
+    background:#699b98;
+    padding:1.2em;
+    text-align: center;
+}
+.headerE{
+    text-align: center;
+    background:#699b98;
+    padding:1.2em;
+    padding-left: 1em;
+    margin:1%;
+    margin-bottom: 0.2%;
+}
+.headerEa{
+    text-align: center;
+    background:#ddc1ac;
+    padding:1.2em;
+    padding-left: 1em;
+    margin:1%;
+    margin-bottom: 0.2%;
+}
+.subjectHeader{
+    font-size:1.1em;
+    margin-top: 3%;
+    text-align: center;
+}
+.subjectHeader h4{margin:0;}
+
+.frameB{border: 2px solid #699b98;}
+.frameP{border: 2px solid #ddc1ac;}
+.framePa{border: 2px solid #ddc1ac; margin-top:3%; margin-left: 1%; margin-bottom: 2%;}
+
+ul{
+    font-size: 1.3em;
+    margin-left: 1em;
+    text-align: left;
+    padding: 0.4em;
+}
+img{
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content{font-size: 1.1em;}
+.contentDisable{font-size: 1.1em; padding:0.9em;}
+[class*='box']{
+    text-align: center;
+    display: table-cell;
+    padding:1em;
+    width:100%;
+    border: 2px solid #699b98;
+}
+[class*='box']:last-of-type{border-left: none;}
+
+a:link, a:visited {
+    width: 100%;
+    color: black;
+    padding: 0.9em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: none;
+    border: 1px solid #699b98;
+}
+
+.none-link:hover{border: none;} 
+
+
+.ESNlink:link, .ESNlink:link{
+    width:auto;
+    display: unset;
+    text-align: unset;
+    padding: unset;
+}
+.ESNlink:hover, .ESNlink:active{
+    background-color: unset;
+    color:#ddc1ac;
+    border: none;
+}
+.button {
+    text-align: center;
+    margin-left: 60%;
+    width: 10em;
+    height: 7em;
+    background: #ddc1ac;
+}
+
+.button:hover {background: #699b98;}
+
+
+
+.contentA{
+    font-size:1.4em;
+    text-align: justify;
+    padding:1em;
+}
+#route{
+    width: 100%;
+    height: 100%;
+}
+.rowA {
+    background: linear-gradient(to right,#699b98,#ddc1ac);
+    height: 11em;
+    padding-bottom: 1em;
+}
+
+.tophead{
+    font-family: 'Times New Roman', Times, serif;
+    height: 5em;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1em;
+    padding-bottom: 1em;
+    width: 70%;
+    float: left;
+}
+.back{
+    width:25% !important;
+    border:none !important;
+    margin-top: 0.6em;
+}
+#home{
+    margin-left:1em; 
+    margin-top:2.8em;
+    width:50px;
+    height:50px;
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+    .rowA a{
+        height: 7.5em;
+        float: right;
+        width:20%;
+    }
+
+    [class*='col-']{
+        text-align: center;
+        margin-right: 1%;
+        padding:1em;
+        
+    }
+    .col-1-1 {width: 61%;padding:0;}
+    .col-1-6 {width: 36%; }
+    .col-1-2{width:49.5%}
+    [class*='col-']:last-of-type {margin-right: 0;}
+
+    img{
+        border-radius: 5%;
+        display: block;
+        padding: 1em;
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35em;
+        height: 35em;
+    }
+
+    .infoRow{
+        width:100%;
+        max-width:1600px;
+        padding: 0.5em;
+        padding-top: 0.8em;
+    }
+    .infoRow:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .part-round{
+        display: inline-block;
+        position: relative;
+        background:#699b98;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        margin-left: 0;
+        padding: 0.5em;
+        width:1%; margin-top:5%;
+        
+    }
+    [class*='part']{
+        float: left;
+        text-align: center;
+        padding: 1em;
+        
+        
+    }
+    [class*='parta']{padding: 2em;}
+    .parta1, .parta2, .parta3 {width: 30%}
+    .parta3{padding-top:1em;}
+    .parta2{padding-top:0em;}
+
+
+    .rowA {
+        background: linear-gradient(to right,#699b98,#ddc1ac);
+        height: 7.5em;
+        margin-bottom: 2%;
+        padding-bottom: 1em;
+     }
+    #home{
+        padding: 10px;
+        padding-top: 0; 
+        margin: 0 ;
+        float:right;
+        width:100px;
+        height:100px;
+    }
+    
+    .back{
+        width:20% !important;
+        border:none !important;
+    }
+
+}
