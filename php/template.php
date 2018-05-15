@@ -167,6 +167,25 @@ class MyPage {
   	return $FOOTER;    
   }  
 
+  public function createSem($title, $contentLeft, $contentRight){
+
+    if ($title !==""){
+      $s= "<div class='subjectHeader'> <h4>{$title}</h4></div>\n";
+    }
+    $s.= "<div class=\"row\">\n<div class=\"col-1-2\">
+        <div class=\"frameB\">
+        <div class=\"headerE\"><h4>Czego się nauczyłam?</h4></div>
+        <ul>{$contentLeft}</ul></div></div>";
+    
+    $s.= "<div class=\"row\">\n<div class=\"col-1-2\">
+        <div class=\"frameP\">
+        <div class=\"headerEa\"><h4>Czego się nauczyłam?</h4></div>
+        <ul>{$contentRight}</ul></div></div>";
+
+    $s.= "</div>\n";
+    return $s;
+  }
+
 } //class MyPage
 
 ?>
